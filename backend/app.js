@@ -1,11 +1,10 @@
-//instalar dependencies
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const port = 8000;
-const baseDir = `/home/jlaprade/tabu.jlaprade.com/`;
+// const baseDir = `/home/jlaprade/tabu.jlaprade.com/`;
 
-//const baseDir = `C:\\Users\\dell user 2\\Documents\\GitHub\\tabu\\`;
+const baseDir = `C:\\Users\\dell user 2\\Documents\\GitHub\\tabu\\`;
 
 // const dbURI = 'mongodb+srv://<user>:<pass>@nextcluster.gmdlrli.mongodb.net/?retryWrites=true&w=majority'
 // mongoose.connect(dbURI)

@@ -1,0 +1,49 @@
+body {
+    height: 2000px;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+
+    height: 100vh;
+    padding: 0px 8vw;
+    
+    overflow-x: clip;
+
+    background-color: var(--secondary);
+    background-image: url("../assets/index/hero-background.png");
+    background-size: cover;
+}
+
+#hero .image {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    max-height: 120%;
+    max-width: 50vw;
+}
+
+h1, h1 *{
+    color: var(--primary);
+    font-size: var(--eightyPx);
+    font-family: 'MilkyBar-Normal', sans-serif;
+    font-weight: 100;
+}
+
+h1 span {
+    font-size: var(--twoHundredPx);
+    line-height: 50%;
+}
+
+#hero button {
+
+    margin-top: calc(var(--shink40) * 400);
+
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* ver como aplicar margin */
