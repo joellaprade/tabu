@@ -16,7 +16,6 @@ mongoose.connect(dbURI)
 app.use(express.static(baseDir));
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-app.use(cookieParser())
 
 app.get('/', (req, res) => {
     res.sendFile(`${baseDir}/index/index.html`)
