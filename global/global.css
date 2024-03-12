@@ -7,20 +7,20 @@
     --grow40: calc(1px + (1920px - 100vw) * 0.000263);
     /*dynamic font size*/
     --twentyPx: calc(20 * var(--shrink40));
-    --eightyPx: calc(80 * var(--shrink40));
-    --twoHundredPx: calc(200 * var(--shrink40));
     --primary: #F3E8D0;
     --secondary: #3F362F;
 }
 
 @font-face {
     font-family: MilkyBar-Normal;
-    src: url('../assets/fonts/MilkyBar-Normal.ttf');
+    src: url('../assets/fonts/Futura Condensed Medium.otf');
 }
+
+
 
 @font-face {
     font-family: Baloo2-Bold;
-    src: url('../assets/fonts/MilkyBar-Bold.ttf');
+    src: url('../assets/fonts/Baloo2-Bold.ttf');
 }
 
 @font-face {
@@ -34,11 +34,72 @@
     font-family: 'Baloo2-Regular', sans-serif;
     font-size: var(--twentyPx);
     font-weight: 300;
-    line-height: 100%;
 }
 
 body {
     background-color: var(--primary);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    translate: -50% 0;
+
+    width: 67vw;
+    height: 10vh;
+    z-index: 2;
+
+    background-color: var(--secondary);
+    border-radius: 1000px;
+
+}
+
+nav a {
+    font-family: 'MilkyBar-Normal', sans-serif;
+    color: var(--primary);
+    font-size: calc(25 * var(--shrink40));
+    /* position: relative;
+    top: calc(-12.5 * var(--shrink40)); */
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    padding: 0px 5%;
+    height: 100%;
+    width: 15%;
+
+    background-color: var(--primary);
+    border-radius: 1000px;
+}
+
+.logo{
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.links-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 85%;
+}
+
+.links-container svg {
+    display: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 button {
@@ -52,7 +113,27 @@ button {
     font-size: var(--twentyPx);
     font-weight: 900;
     line-height: 100%;
+
+    cursor: pointer;
 }
+
+/* CUSTOM COMPONENTS */
+
+.link-button {  
+    border: 3px solid var(--primary);
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* ICONS */
+
+.hamburguer{
+    fill: var(--primary);
+    width: 5vh;
+}
+
 
 /* TOOLS */
 
@@ -61,16 +142,39 @@ button {
 }
 
 
-/* DESKTOP ONLY */
 
-@media screen and (width >= 960px){
+/* RESPONSIVE */
 
+@media screen and (max-width: 1000px){
+    nav {
+        width: 84vw;
+    }
+    nav .links-container {
+        justify-content: end;
+        padding-right: 5vh;
+    }
+    nav .links-container svg{
+        display: inline-block;
+    }
+    nav .links-container a{
+        display: none;
+    }
+    nav .logo-container {
+        width: 20%;
+    }
 }
 
-/* MOBILE ONLY */
+@media screen and (max-width: 650px){
+    nav .logo-container {
+        width: 50%;
+    }
+}
 
-@media screen and (width < 960px){
+@media screen and (max-width: 450px){
 
+    nav .logo-container {
+        width: 60%;
+    }
 }
 
 

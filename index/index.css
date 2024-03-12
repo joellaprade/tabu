@@ -2,48 +2,130 @@ body {
     height: 2000px;
 }
 
-#hero{
+#hero {
+    position: relative;
+    height: 100vh;
+
+    overflow-x: clip;
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-image: url("../assets/index/hero-background.png");
+
+}
+
+#hero .wrapper{
     display: flex;
     align-items: center;
+    position: relative;
 
-    height: 100vh;
-    padding: 0px 8vw;
-    
-    overflow-x: clip;
+    height: 100%;
+    padding:0px 17vw;
 
-    background-color: var(--secondary);
-    background-image: url("../assets/index/hero-background.png");
-    background-size: cover;
+    box-sizing: border-box;
+}
+
+#hero .copy {
+    margin-top: 5%;
+
 }
 
 #hero .image {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -20%;
     transform: translateY(-50%);
 
-    max-height: 120%;
-    max-width: 50vw;
+    width: 60%;
+    aspect-ratio: 1/1;
 }
 
-h1, h1 *{
+h1{
     color: var(--primary);
-    font-size: var(--eightyPx);
+    font-size: calc(90 * var(--shrink40));
     font-family: 'MilkyBar-Normal', sans-serif;
     font-weight: 100;
+
+    line-height: 85%;
+    text-size-adjust: none;
 }
 
-h1 span {
-    font-size: var(--twoHundredPx);
-    line-height: 50%;
+h1.bigger {
+    font-size: calc(220 * var(--shrink40));
+    top: calc(-110 * var(--shrink40));
 }
 
-#hero button {
-
-    margin-top: calc(var(--shink40) * 400);
-
+#hero .copy button {
+    margin-top: 10%;
     color: var(--primary);
     border-color: var(--primary);
 }
 
-/* ver como aplicar margin */
+
+
+/* RESPONSIVE CODE */
+
+@media screen and (max-width: 1300px){
+    #hero .image{
+        translate: 10% 0px;
+        
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #hero .wrapper {
+        padding: 0vw 8vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #hero .wrapper {
+        flex-direction: column-reverse;
+        justify-content: start;
+        text-align: center;
+        padding: 0;
+    }
+
+    #hero .image {
+        right: 50%;
+        translate: 50% 0px;
+        top: -0%;
+
+        width: 120%;
+    }
+
+    .img-wrapper {
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+
+    #hero .copy {
+        margin-top: 10%;
+    }
+
+    h1{
+        font-size: calc(80 * var(--shrink40));
+    }
+    
+    h1 span {
+        font-size: calc(200 * var(--shrink40));
+    }
+}
+
+@media screen and (max-width: 600px){
+    #hero .image {
+        top: 10%;
+
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #hero .image {
+        top: 20%;
+
+        width: 140%;
+    }
+
+}
