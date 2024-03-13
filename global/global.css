@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: MilkyBar-Normal;
+    font-family: "Futura-Condensed";
     src: url('../assets/fonts/Futura Condensed Medium.otf');
 }
 
@@ -58,11 +58,9 @@ nav {
 }
 
 nav a {
-    font-family: 'MilkyBar-Normal', sans-serif;
+    font-family: 'Futura-Condenced', sans-serif;
     color: var(--primary);
     font-size: calc(25 * var(--shrink40));
-    /* position: relative;
-    top: calc(-12.5 * var(--shrink40)); */
 }
 
 .logo-container{
@@ -94,6 +92,10 @@ nav a {
     width: 85%;
 }
 
+.links-container .link-button {
+    border-color: var(--primary)
+}
+
 .links-container svg {
     display: none;
 }
@@ -117,10 +119,14 @@ button {
     cursor: pointer;
 }
 
+p {
+    text-indent: 40px;
+}
+
 /* CUSTOM COMPONENTS */
 
 .link-button {  
-    border: 3px solid var(--primary);
+    border: 3px solid var(--secondary);
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     box-sizing: border-box;

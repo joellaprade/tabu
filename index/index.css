@@ -1,5 +1,5 @@
 body {
-    height: 2000px;
+    height: 4000px;
 }
 
 #hero {
@@ -44,7 +44,7 @@ body {
 h1{
     color: var(--primary);
     font-size: calc(90 * var(--shrink40));
-    font-family: 'MilkyBar-Normal', sans-serif;
+    font-family: 'Futura-Condensed', sans-serif;
     font-weight: 100;
 
     line-height: 85%;
@@ -61,6 +61,92 @@ h1.bigger {
     color: var(--primary);
     border-color: var(--primary);
 }
+
+#benefits-0 {
+    width: 100%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-image: url("../assets/background.png");}
+
+#benefits-0 .container-0 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 300px;
+    padding: 0px 17vw;
+
+    box-sizing: border-box;
+
+}
+
+#benefits-0 .container-0 .ilustration {
+    width: 33vw;
+    aspect-ratio: 1/1;
+}
+
+#benefits-0 .container-0 .copy {
+    width: 25vw;
+}
+
+#benefits-0 .copy .benefit-title {
+    margin-bottom: 25px;
+
+    font-family: 'Futura-Condensed', sans-serif;
+    font-size: calc(50 * var(--shrink40));
+    font-weight: 900;
+
+    color: var(--secondary);
+}
+
+#benefits-0 .copy .link-button {
+    display: inline-block;
+    
+    margin-top: 50px;
+}
+
+
+#benefits-0 .container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 300px;
+    padding: 0px 8vw 0px 17vw;
+
+    box-sizing: border-box;
+
+}
+
+#benefits-0 .container-1 .ilustration {
+    width: 42vw;
+    aspect-ratio: 5/3;
+}
+
+#benefits-0 .container-1 .copy {
+    width: 25vw;
+}
+
+#benefits-0 .benefit-title {
+    margin-bottom: 25px;
+
+    font-family: 'Futura-Condensed', sans-serif;
+    font-size: calc(50 * var(--shrink40));
+    font-weight: 900;
+
+    color: var(--secondary);
+}
+
+
+
+
+
+
 
 
 
