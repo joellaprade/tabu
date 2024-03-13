@@ -6,14 +6,19 @@
     --shrink20: calc(1px - (1920px - 100vw) * 0.00018);
     --grow40: calc(1px + (1920px - 100vw) * 0.000263);
     /*dynamic font size*/
-    --twentyPx: calc(20 * var(--shrink40));
+    --twentyPx: calc(20 * var(--shrink20));
     --primary: #F3E8D0;
     --secondary: #3F362F;
 }
 
 @font-face {
-    font-family: "Futura-Condensed";
-    src: url('../assets/fonts/Futura Condensed Medium.otf');
+    font-family: "Futura-Condensed-Medium";
+    src: url('../assets/fonts/futura/futura medium condensed bt.ttf');
+}
+
+@font-face {
+    font-family: "Futura-Condensed-Bold";
+    src: url('../assets/fonts/futura/futura medium condensed bt.ttf');
 }
 
 
@@ -58,7 +63,7 @@ nav {
 }
 
 nav a {
-    font-family: 'Futura-Condenced', sans-serif;
+    font-family: 'Futura-Condenced-Medium', sans-serif;
     color: var(--primary);
     font-size: calc(25 * var(--shrink40));
 }
@@ -93,7 +98,7 @@ nav a {
 }
 
 .links-container .link-button {
-    border-color: var(--primary)
+    border-color: var(--primary);
 }
 
 .links-container svg {
@@ -123,13 +128,35 @@ p {
     text-indent: 40px;
 }
 
+h2 {
+    font-family: 'Futura-Condensed-Medium', sans-serif;
+    font-size: calc(50 * var(--shrink40));
+    font-weight: 900;
+
+    color: var(--secondary);
+}
+
 /* CUSTOM COMPONENTS */
 
 .link-button {  
-    border: 3px solid var(--secondary);
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
+    display: inline-block;
+
+    padding: 7px 20px 7px 20px;
+    
     box-sizing: border-box;
+    
+    border: 3px solid var(--secondary);
+    border-radius: 5px;
+
+    font-weight: 900;
+}
+
+.line {
+    height: 8px;
+
+    border-radius: 100px;
+
+    background-color: var(--primary);
 }
 
 
@@ -167,6 +194,16 @@ p {
     }
     nav .logo-container {
         width: 20%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    p {
+        text-indent: 0;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
     }
 }
 
