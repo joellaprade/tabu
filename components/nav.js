@@ -1,6 +1,8 @@
 document.querySelector('nav').innerHTML += 
 `<div class="logo-container">
-    <img class="logo" src="../assets/logo.png" alt="">
+    <a href="/">
+        <img class="logo" src="../assets/logo.png" alt="">
+    </a>
 </div>
 <div class="links-container">
     <a href="/">Home</a>
