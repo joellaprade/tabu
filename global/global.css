@@ -159,6 +159,10 @@ h2 {
     background-color: var(--primary);
 }
 
+.bigger {
+    font-size: calc(220 * var(--shrink40));
+}
+
 
 /* ICONS */
 
