@@ -179,6 +179,13 @@ h2 {
 /* RESPONSIVE */
 
 @media screen and (max-width: 1000px){
+    p {
+        text-indent: 0;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
     nav {
         width: 84vw;
     }
@@ -194,16 +201,6 @@ h2 {
     }
     nav .logo-container {
         width: 20%;
-    }
-}
-
-@media screen and (max-width: 800px){
-    p {
-        text-indent: 0;
-        text-align: center;
-    }
-    h2 {
-        text-align: center;
     }
 }
 

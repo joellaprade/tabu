@@ -13,4 +13,7 @@ document.querySelector('head').innerHTML += `<link type="text/css" rel="styleshe
         <path d="M0 40C0 37.7909 1.79086 36 4 36H40C42.2091 36 44 37.7909 44 40C44 42.2091 42.2091 44 40 44H4C1.79086 44 0 42.2091 0 40Z" />
     </symbol>
 </svg>
+
+
+
 `
