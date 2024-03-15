@@ -164,11 +164,16 @@ h2 {
 }
 
 
-/* ICONS */
+/* SVGS */
 
 .hamburguer{
     fill: var(--primary);
     width: 5vh;
+}
+
+.arrow {
+    width: calc(84 * var(--shrink40));
+    height: calc(84 * var(--shrink40));
 }
 
 

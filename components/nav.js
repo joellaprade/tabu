@@ -10,7 +10,7 @@ document.querySelector('nav').innerHTML +=
     <a href="/reserve">Reserve Venue</a>
     <a class="link-button" href="#footer">Contact</a>
     <svg class="hamburguer">
-        <use href="#hamburguer"></use>
+        <use href="/assets/Hamburguer.svg#hamburguer"></use>
     </svg>
 </div>
 
