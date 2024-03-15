@@ -47,7 +47,7 @@ h1{
     text-size-adjust: none;
 }
 
-h1.bigger {
+#hero h1.bigger {
     top: calc(-110 * var(--shrink40));
 }
 
@@ -368,6 +368,88 @@ h1.bigger {
 #benefits-2 .container-1 .wrapper .container svg:nth-child(2) {
     translate: calc(42 * var(--shrink40)) 0;
 }
+
+
+
+
+#carusel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-image: url("../assets/background-2.png");
+}
+
+#carusel .title {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: calc(150 * var(--shrink40));
+}
+
+#carusel .title h1 {
+    color: var(--secondary);
+}
+
+#carusel .container {
+    display: flex;
+
+    margin-bottom: calc(300 * var(--shrink40));
+    width: 100%;
+    position: relative;
+}
+
+#carusel .container .light-arrow:nth-child(1) {
+    position: absolute;
+    bottom: 50%;
+    translate: 0 50%;
+    left: 5%;
+}
+
+#carusel .container .light-arrow:nth-child(3) {
+    position: absolute;
+    bottom: 50%;
+    translate: 0 50%;
+    right: 5%;
+}
+
+#carusel .container .slider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    width: 100%;
+    height: 45vh;
+
+    overflow-x: scroll;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#carusel .container .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #carusel .container .slider {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+#carusel .container .slider img {
+    height: 100%;
+    margin: 0px calc(50 * var(--shrink40));
+
+    z-index: -1;
+}
+
+
 
 
 
