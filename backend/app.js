@@ -19,3 +19,7 @@ app.use(express.json())
 app.get('/', (req, res) => {
     res.sendFile(`${baseDir}/index/index.html`)
 })
+
+app.get('/menu', (req, res) => {
+    res.sendFile(`${baseDir}/menu/menu.html`)
+})
