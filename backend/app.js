@@ -23,3 +23,7 @@ app.get('/', (req, res) => {
 app.get('/menu', (req, res) => {
     res.sendFile(`${baseDir}/menu/menu.html`)
 })
+
+app.get('/reserve', (req, res) => {
+    res.sendFile(`${baseDir}/reserve/reserve.html`)
+})
