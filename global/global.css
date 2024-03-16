@@ -119,6 +119,16 @@ footer span, footer a {
     color: var(--primary);
 }
 
+footer h2 {
+    font-size: calc(25 * var(--shrink40));
+    color: var(--primary);
+}
+
+footer .links {
+    display: flex;
+    justify-content: start;
+}
+
 footer .contact {
     display: flex;
     flex-direction: column;
@@ -128,12 +138,26 @@ footer .contact {
 
 footer .contact div {
     display: flex;
-    margin: calc(15 * var(--shrink40));
+    margin: calc(15 * var(--shrink40)) 0px;
 }
 
 footer .contact svg {
     margin-right: calc(15 * var(--shrink40));
 }
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+footer .social a {
+    height: 30px;
+    margin: calc(15 * var(--shrink40)) 0px;
+}
+
+
 
 a {
     text-decoration: none;
@@ -252,6 +276,33 @@ h2 {
 
 
 /* RESPONSIVE */
+
+@media screen and (max-width: 1200px){
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    footer .links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer .contact {
+        align-items: center;
+        margin: 0px 0px calc(100 * var(--shrink40)) 0px;
+    }
+    
+    footer .social {
+        align-items: center;
+        margin: 0px 0px calc(100 * var(--shrink40)) 0px;
+    }
+
+    footer img {
+        width: 75vw
+    }
+}
 
 @media screen and (max-width: 1000px){
     p {
