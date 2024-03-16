@@ -105,6 +105,36 @@ nav a {
     display: none;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: calc(150 * var(--shrink40)) 8vw;
+    box-sizing: border-box;
+
+    background-color: var(--secondary);
+}
+
+footer span, footer a {
+    color: var(--primary);
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0px 8vw 0px 0px;
+}
+
+footer .contact div {
+    display: flex;
+    margin: calc(15 * var(--shrink40));
+}
+
+footer .contact svg {
+    margin-right: calc(15 * var(--shrink40));
+}
+
 a {
     text-decoration: none;
 }
@@ -183,6 +213,35 @@ h2 {
     cursor: pointer;
 }
 
+.phone {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp {
+    width: 30px;
+    height: 30px;
+}
+
+.mail {
+    width: 30px;
+    height: 30px;
+}
+
+.facebook {
+    width: 30px;
+    height: 30px;
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+}
+
+.trip-advisor {
+    width: 30px;
+    height: 30px;
+}
 
 /* TOOLS */
 
