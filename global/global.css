@@ -64,6 +64,7 @@ nav {
     background-color: var(--secondary);
     border-radius: 1000px;
 
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.303);
 }
 
 nav a {
@@ -103,6 +104,7 @@ nav a {
 
 .links-container .link-button {
     border-color: var(--primary);
+    font-weight: 600;
 }
 
 .links-container svg {
@@ -194,6 +196,63 @@ h2 {
     color: var(--secondary);
 }
 
+.select-wrapper{
+    position: relative;
+}
+
+.select-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    width: 140px;
+    height: 35px;
+    padding: 10px 15px ;
+
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 5px;
+
+    font-weight: 600;
+}
+
+.select-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    background-color: var(--secondary);
+    translate: 0 100%;
+}
+
+.select-options span {
+    color: var(--primary);
+}
+
+.select-element span {
+    color: var(--primary);
+}
+
+select {
+    padding: 10px 15px ;
+
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 600;
+}
+
+option {
+    color: var(--primary);
+
+    font-weight: 600;
+}
+
 /* CUSTOM COMPONENTS */
 
 .link-button {  
@@ -232,6 +291,12 @@ h2 {
 .arrow {
     width: calc(84 * var(--shrink40));
     height: calc(84 * var(--shrink40));
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    width: calc(20 * var(--shrink40));
+    height: calc(20 * var(--shrink40));
     cursor: pointer;
 }
 

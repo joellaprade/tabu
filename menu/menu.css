@@ -1,0 +1,97 @@
+#menu {
+    width: 100%;
+    position: relative;
+
+    background-image: url('/assets/background.png');
+    background-size: cover;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+h1{
+    color: var(--secondary);
+    font-size: calc(130 * var(--shrink40));
+    font-family: 'Futura-Condensed-Medium', sans-serif;
+    font-weight: 600;
+
+    line-height: 85%;
+    text-size-adjust: none;
+}
+
+#menu .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+    width: 84%;
+    margin: calc(300 * var(--shrink40)) 8vw 0vw 8vw;
+    padding: calc(50 * var(--shrink40)) 8vw;
+    box-sizing: border-box;
+    border-bottom: 5px solid var(--secondary);
+}
+
+#menu .menu-nav span {
+    font-weight: 600;
+}
+
+#menu .selected {
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    color: var(--primary);
+    background-color: var(--secondary);
+
+    translate: 0px 10px;
+}
+
+#menu .dishes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    width: 100%;
+    padding: calc(150 * var(--shrink40)) 8vw;
+    box-sizing: border-box;
+}
+
+#menu .dishes .container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin: 0 8vw;
+    margin-bottom: calc(75 * var(--shrink40));
+}
+
+#menu .menu-nav .select-wrapper {
+    display: none;
+}
+
+#menu .container .div {
+    /* hacer que se pueda poner svg picante, main etc */
+}
+
+@media screen and (max-width: 1500px){
+    #menu .menu-nav > span {
+        display: none;
+    }
+    #menu .menu-nav .select-wrapper {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #menu .menu-nav {
+        padding: calc(50 * var(--shrink40)) 0vw;
+    }
+    #menu .dishes {
+        justify-content: center;
+    }
+    #menu .dishes .container {
+        width: 50vw;
+        
+        margin: 0 4vw calc(100 * var(--shrink40));
+    }
+    #menu .container span {
+        text-align: center;
+    }
+}
