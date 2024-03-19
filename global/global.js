@@ -2,7 +2,7 @@ class selectElement {
     constructor(element){
         this.header = element.querySelector('.select-element').querySelector('span');
         this.options = element.querySelector('.select-options').querySelectorAll('span')
-        this.setListeners(element);
+        this.initialize(element);
     }
 
     rotateArrow(element, deg){
@@ -25,7 +25,8 @@ class selectElement {
         this.header.innerText = element.innerText;
     }
 
-    setListeners(element){
+    initialize(element){
+        this.selectOption(this.options[0])
         element.addEventListener('click', () => {
             this.toggleOptions(element);
         })

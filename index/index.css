@@ -343,7 +343,8 @@ h1{
 
 #benefits-2 .container-1 .wrapper img {
     height: 100%;
-    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.3);
 }
 
 #benefits-2 .container-1 .copy {
