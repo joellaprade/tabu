@@ -206,7 +206,6 @@ h2 {
     align-items: center;
     position: relative;
 
-    width: 140px;
     height: 35px;
     padding: 10px 15px ;
 
@@ -218,23 +217,29 @@ h2 {
 }
 
 .select-options {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     bottom: 0px;
     right: 0px;
 
+    padding: 10px 15px;
+
     background-color: var(--secondary);
+    border-radius: 5px;
     translate: 0 100%;
 }
 
 .select-options span {
     color: var(--primary);
+    margin: 5px 0px;
 }
 
 .select-element span {
     color: var(--primary);
+    margin-right: 20px;
 }
+
 
 select {
     padding: 10px 15px ;
