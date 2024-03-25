@@ -1,3 +1,23 @@
+class MobileConsole {
+    constructor(element){
+        this.element = element;
+    }
+
+    log(message){
+        this.element.innerText = message;
+    }
+}
+
+var mobileConsole = new MobileConsole(document.getElementById('mobile-console'))
+
+mobileConsole.log(document.querySelector('.light-arrow').childNodes[0])
+
+
+
+
+
+
+
 class selectElement {
     constructor(element){
         this.header = element.querySelector('.select-element').querySelector('span');

@@ -1,20 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-<symbol id="light-arrow" viewBox="0 0 144 144" fill="none">
-    <g filter="url(#filter0_d_709_9)">
-    <circle cx="42" cy="42" r="42" transform="matrix(-1 0 0 1 114 26)" fill="#F3E8D0"/>
-    <path d="M87.002 66.5C87.8304 66.5 88.502 67.1716 88.502 68C88.502 68.8284 87.8304 69.5 87.002 69.5V66.5ZM55.9413 69.0607C55.3555 68.4749 55.3555 67.5251 55.9413 66.9393L65.4872 57.3934C66.073 56.8076 67.0228 56.8076 67.6086 57.3934C68.1943 57.9792 68.1943 58.9289 67.6086 59.5147L59.1233 68L67.6086 76.4853C68.1943 77.0711 68.1943 78.0208 67.6086 78.6066C67.0228 79.1924 66.073 79.1924 65.4872 78.6066L55.9413 69.0607ZM87.002 69.5H57.002V66.5H87.002V69.5Z" fill="#3F362F"/>
-    </g>
-    <defs>
-    <filter id="filter0_d_709_9" x="0" y="0" width="144" height="144" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-    <feOffset dy="4"/>
-    <feGaussianBlur stdDeviation="15"/>
-    <feComposite in2="hardAlpha" operator="out"/>
-    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_709_9"/>
-    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_709_9" result="shape"/>
-    </filter>
-    </defs>
-</symbol>
+    <symbol id="light-arrow" viewBox="0 0 84 84" fill="none">
+        <circle cx="42" cy="42" r="42" transform="matrix(-1 0 0 1 84 0)" fill="#F3E8D0"/>
+        <path d="M57.002 40.5C57.8304 40.5 58.502 41.1716 58.502 42C58.502 42.8284 57.8304 43.5 57.002 43.5V40.5ZM25.9413 43.0607C25.3555 42.4749 25.3555 41.5251 25.9413 40.9393L35.4872 31.3934C36.073 30.8076 37.0228 30.8076 37.6086 31.3934C38.1943 31.9792 38.1943 32.9289 37.6086 33.5147L29.1233 42L37.6086 50.4853C38.1943 51.0711 38.1943 52.0208 37.6086 52.6066C37.0228 53.1924 36.073 53.1924 35.4872 52.6066L25.9413 43.0607ZM57.002 43.5H27.002V40.5H57.002V43.5Z" fill="#3F362F"/>
+    </symbol>
 </svg>

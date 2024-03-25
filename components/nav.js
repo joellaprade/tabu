@@ -12,5 +12,15 @@ document.querySelector('nav').innerHTML +=
         <use href="/assets/Hamburguer.svg#hamburguer"></use>
     </svg>
 </div>
-
+<div class="mobile-nav">
+                <svg class="x">
+                    <use href="../assets/x.svg#x"></use>
+                </svg>
+                <div class="mobile-links-container">
+                    <a href="/">Home</a>
+                    <a href="/menu">Menu</a>
+                    <a href="/reserve">Reserve Venue</a>
+                    <a class="link-button" href="#footer">Contact</a>
+                </div>
+            </div>
 `

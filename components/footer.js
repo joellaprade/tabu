@@ -42,4 +42,6 @@ document.querySelector('footer').innerHTML +=
 </div>
 <a href="https://maps.app.goo.gl/FXmKpF8Krh7hQggq8" target="_blank">
 <img src="/assets/footer/map.png" alt="">
-</a>`
+</a>
+
+<div id="mobile-console"></div>`
