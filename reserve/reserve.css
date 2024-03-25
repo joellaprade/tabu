@@ -1,14 +1,15 @@
 body {
     border-top: 1px solid rgba(0, 0, 0, 0);
-    background-size: cover;
-    background-image: url("../assets/background.png");
+    background-size: 100vw;
+    background-image: url("../assets/background-2.png");
 }
 
 #header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: calc(300 * var(--shrink40));
+    padding-top: calc(300 * var(--shrink40));
+
 }
 
 #header .copy {
@@ -23,7 +24,7 @@ body {
 
     color: var(--secondary);
     font-size: calc(90 * var(--shrink40));
-    font-family: 'Futura-Condensed-Medium', sans-serif;
+    font-family: 'Futura-Condensed-Bold', sans-serif;
     font-weight: 500;
 
     line-height: 85%;
@@ -52,6 +53,7 @@ body {
 
 #header .wrapper img {
     height: 100%;
+    border-radius: 10px;
     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -164,13 +166,13 @@ body {
     align-items: center;
     
     width: 42vw;
-    margin-bottom: calc(100 * var(--shrink40));
+    margin-bottom: calc(50 * var(--shrink40));
 }
 
 #bar .copy p {
     text-indent: 0;
     text-align: center;
-    margin: calc(20 * var(--shrink40)) 0;
+    margin-top: calc(15 * var(--shrink40));
 }
 
 #bar .container {
@@ -197,6 +199,10 @@ body {
 
 #bar .premium {
     border-left: 2px solid var(--secondary);
+}
+
+#bar .copy .select-element {
+    margin-top: calc(50 * var(--shrink40))
 }
 
 
@@ -249,12 +255,12 @@ body {
 
 @media screen and (max-width: 1000px){
 
-    #header {
-        margin-top: calc(400 * var(--shrink40));
-    }
+    
 
     #header h1 {
         width: 80vw;
+
+        font-size: calc(80 * var(--shrink40));
     }
 
     #header .copy p {
@@ -264,6 +270,94 @@ body {
     #header .wrapper {
         margin: calc(100 * var(--shrink40)) auto;
         height: 50vw;
+        margin-bottom: 0;
     }
+
+    #benefits-0 .container-0 {
+        flex-direction: column;
+        padding: 0px 8vw;
+    }
+
+    #benefits-0 .container-0 .ilustration {
+        width: 84vw;
+        margin-top: 100px;
+    }
+    
+    #benefits-0 .container-0 .copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 84vw;
+    }
+
+    #benefits-0 .container-1 {
+        flex-direction: column-reverse;
+        padding: 0px 8vw;
+    }
+
+    #benefits-0 .container-1 .ilustration {
+        width: 84vw;
+        margin-top: 100px;
+    }
+    
+    #benefits-0 .container-1 .copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 84vw;
+    }
+
+    #bar .copy {
+        width: 67vw;
+    }
+
+    #bar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bar .container > div {
+        width: 50vw;
+    }
+
+    #bar .container .classic {
+        border: none;
+        border-bottom: 2px solid var(--secondary);
+        padding: calc(100 * var(--shrink40)) calc(50 * var(--shrink40));
+    }
+    #bar .container .premium {
+        border: none;
+        border-top: 2px solid var(--secondary);
+        padding: calc(100 * var(--shrink40)) calc(50 * var(--shrink40));
+    }
+    
+
+
+
+    #benefits-1 .container {
+        flex-direction: column;
+        padding: 0px 8vw;
+    }
+
+    #benefits-1 .container .ilustration {
+        width: 84vw;
+        margin-top: 100px;
+    }
+    
+    #benefits-1 .container .copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 84vw;
+    }
+
+
+    #benefits-1 .container {
+        margin: calc(200 * var(--shrink40)) 0px;
+    }
+
 }
 

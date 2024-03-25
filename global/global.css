@@ -6,19 +6,19 @@
     --shrink20: calc(1px - (1920px - 100vw) * 0.00018);
     --grow40: calc(1px + (1920px - 100vw) * 0.000263);
     /*dynamic font size*/
-    --twentyPx: calc(20 * var(--shrink20));
+    --twentyPx: calc(22 * var(--shrink20));
     --primary: #F3E8D0;
     --secondary: #3F362F;
 }
 
 @font-face {
     font-family: "Futura-Condensed-Medium";
-    src: url('../assets/fonts/futura/futura medium condensed bt.ttf');
+    src: url('../assets/fonts/futura/futura\ medium\ condensed\ bt.ttf');
 }
 
 @font-face {
     font-family: "Futura-Condensed-Bold";
-    src: url('../assets/fonts/futura/futura medium condensed bt.ttf');
+    src: url('../assets/fonts/futura/Futura\ Bold\ font.ttf');
 }
 
 
@@ -68,7 +68,7 @@ nav {
 }
 
 nav a {
-    font-family: 'Futura-Condenced-Medium', sans-serif;
+    font-family: 'Baloo2-Regular', sans-serif;
     color: var(--primary);
     font-size: calc(25 * var(--shrink40));
 }
@@ -128,6 +128,7 @@ footer span, footer a {
 footer h2 {
     font-size: calc(25 * var(--shrink40));
     color: var(--primary);
+    margin: calc(15 * var(--shrink40)) 0;
 }
 
 footer .links {
@@ -214,6 +215,7 @@ h2 {
     border-radius: 5px;
 
     font-weight: 600;
+    font-family: 'Baloo2-Regular', sans-serif;
 }
 
 .select-options {

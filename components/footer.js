@@ -6,13 +6,13 @@ document.querySelector('footer').innerHTML +=
         <svg class="phone">
             <use href="/assets/footer/phone.svg#phone"></use>
         </svg>
-        <a href="tel:22222222" target="_blank">22222222</a>
+        <a href="tel:22371439" target="_blank">22371439</a>
     </div>
     <div>
         <svg class="whatsapp">
             <use href="/assets/footer/whatsapp.svg#whatsapp"></use>
         </svg>
-        <a href="tel:88888888" target="_blank">88888888</a>
+        <a href="https://wa.me/+50683752009" target="_blank">83752009</a>
     </div>
     <div>
         <svg class="mail">
@@ -23,17 +23,17 @@ document.querySelector('footer').innerHTML +=
 </div>
 <div class="social">
     <h2>SOCIAL</h2>
-    <a href="https://facebook.com" target="_blank">
+    <a href="https://facebook.com/tabu.tamarindo" target="_blank">
         <svg class="facebook">
             <use href="/assets/footer/facebook.svg#facebook"></use>
         </svg>
     </a>
-    <a href="https://instagram.com" target="_blank">
+    <a href="https://instagram.com/tabu.tamarindo" target="_blank">
         <svg class="instagram">
             <use href="/assets/footer/instagram.svg#instagram"></use>
         </svg>
     </a>
-    <a href="https://tripadvisor.com" target="_blank">
+    <a href="https://www.tripadvisor.com/Restaurant_Review-g309253-d25569258-Reviews-Tabu-Tamarindo_Province_of_Guanacaste.html?m=19905" target="_blank">
         <svg class="trip-advisor">
             <use href="/assets/footer/trip-advisor.svg#trip-advisor"></use>
         </svg>

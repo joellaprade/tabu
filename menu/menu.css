@@ -1,9 +1,12 @@
+body {
+    background-size: 160vw;
+    background-image: url("../assets/background-2.png");
+}
+
 #menu {
     width: 100%;
     position: relative;
 
-    background-image: url('/assets/background.png');
-    background-size: cover;
     border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
@@ -66,8 +69,51 @@ h1{
     display: none;
 }
 
-#menu .container .div {
-    /* hacer que se pueda poner svg picante, main etc */
+#menu .dishes .container div {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+#menu .dishes .container div svg {
+    margin-left: calc(15 * var(--shrink40));
+}
+
+
+
+#menu .icons {
+    display: flex;
+
+    padding: 0px 0px calc(25 * var(--shrink40)) 17vw;
+}
+
+#menu .icons > div {
+    display: flex;
+    align-items: center;
+}
+
+#menu .icons svg {
+    margin-right: calc(10 * var(--shrink40));
+}
+
+#menu .icons span {
+    margin-right: calc(50 * var(--shrink40));
+}
+
+#menu .special{
+    width: calc(43 * var(--shrink40));
+    aspect-ratio: 1/1;
+}
+
+#menu .veggie{
+    width: calc(43 * var(--shrink40));
+    aspect-ratio: 1/1;
+}
+
+#menu .spicy{
+    width: calc(43 * var(--shrink40));
+    aspect-ratio: 1/1;
 }
 
 @media screen and (max-width: 1500px){
@@ -96,5 +142,28 @@ h1{
     }
     #menu .container span {
         text-align: center;
+    }
+
+    #menu .dishes .container div {
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu .dishes .container div svg {
+        margin: calc(10 * var(--shrink40)) 0;
+    }
+
+    #menu .icons {
+        display: flex;
+        justify-content: center;
+        
+        width: 100%;
+        
+
+        padding: 0;
+        padding-bottom: calc(25 * var(--shrink40));
+    }
+
+    #menu .icons .container-2 span {
+        margin: 0;
     }
 }

@@ -213,15 +213,18 @@ h1{
 }
 
 .paw {
-    width: 66px;
+    width: calc(66 * var(--shrink40));
+    aspect-ratio: 1/1;
 }
 
 .park {
-    width: 66px;
+    width: calc(66 * var(--shrink40));
+    aspect-ratio: 1/1;
 }
 
 .handicap {
-    width: 66px;
+    width: calc(66 * var(--shrink40));
+    aspect-ratio: 1/1;
 }
 
 
@@ -380,11 +383,8 @@ h1{
     align-items: center;
     
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0);
     box-sizing: border-box;
 
-    background-size: cover;
-    background-image: url("../assets/background-2.png");
 }
 
 #carusel .title {
@@ -452,14 +452,15 @@ h1{
 
 
 
-
-
 #testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 17vw;
     margin-bottom: calc(200 * var(--shrink40));
+    
+    background-size: cover;
+    background-image: url("../assets/background.png");
 }
 
 #testimonials .title {
@@ -552,8 +553,8 @@ h1{
     }
 
     #benefits-0 .container-0 .ilustration {
-        width: 67vw;
-        margin-top: 100px;
+        width: 84vw;
+        margin-top: 50px;
     }
     
     #benefits-0 .container-0 .copy {
@@ -570,8 +571,8 @@ h1{
     }
 
     #benefits-0 .container-1 .ilustration {
-        width: 67vw;
-        margin-top: 100px;
+        width: 84vw;
+        margin-top: 50px;
     }
     
     #benefits-0 .container-1 .copy {
@@ -608,18 +609,14 @@ h1{
         text-align: center;
     }
 
-
-
-
-
     #benefits-2 .container-0 {
         flex-direction: column;
         padding: 0px 17vw;
     }
 
     #benefits-2 .container-0 .ilustration {
-        width: 67vw;
-        margin-top: 100px;
+        width: 84vw;
+        margin-top: 50px;
     }
     
     #benefits-2 .container-0 .copy {
@@ -638,6 +635,7 @@ h1{
     
     #benefits-2 .container-1 .wrapper {
         margin: calc(100 * var(--shrink40)) auto;
+        margin-bottom: 0;
         height: 50vw;
     }
     
