@@ -10,7 +10,7 @@ class MobileConsole {
 
 var mobileConsole = new MobileConsole(document.getElementById('mobile-console'))
 
-mobileConsole.log(document.querySelector('.light-arrow').childNodes[0])
+// mobileConsole.log(document.querySelector('.light-arrow').childNodes[0])
 
 
 
