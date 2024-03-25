@@ -114,7 +114,7 @@ nav a {
 .mobile-nav {
     position: absolute;
 
-    right: calc(-8.1vw .);
+    right: calc(-8.1vw - 66vw);
     top: -3vh;
 
     display: flex;
