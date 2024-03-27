@@ -5,10 +5,17 @@ body {
 }
 
 #header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    width: 100%;
     padding-top: calc(300 * var(--shrink40));
+    
+    overflow-x: clip;
+    box-sizing: border-box;
+
 
 }
 

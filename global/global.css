@@ -243,6 +243,7 @@ h2 {
 
 .select-wrapper{
     position: relative;
+    z-index: 100;
 }
 
 .select-element {

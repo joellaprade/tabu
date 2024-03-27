@@ -347,6 +347,8 @@ h1{
 
 #benefits-2 .container-1 .wrapper img {
     height: 100%;
+    max-width: 42vw;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.3);
 }
@@ -412,6 +414,7 @@ h1{
     bottom: 50%;
     translate: 0 50%;
     left: 5%;
+    z-index: 2;
 }
 
 #carusel .container .light-arrow:nth-child(3) {
@@ -419,6 +422,7 @@ h1{
     bottom: 50%;
     translate: 0 50%;
     right: 5%;
+    z-index: 2;
 }
 
 #carusel .container .slider {
@@ -433,6 +437,7 @@ h1{
     box-sizing: border-box;
 
     border: 1px solid rgba(0, 0, 0, 0);
+
 }
 
 #carusel .container .slider::-webkit-scrollbar {
@@ -639,6 +644,10 @@ h1{
         margin: calc(100 * var(--shrink40)) auto;
         margin-bottom: 0;
         height: 50vw;
+    }
+
+    #benefits-2 .container-1 .wrapper img {
+        max-width: 83vw;
     }
     
     #benefits-2 .container-1 .filler {

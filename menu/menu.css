@@ -34,6 +34,7 @@ h1{
 }
 
 #menu .menu-nav span {
+    cursor: pointer;
     font-weight: 600;
 }
 
@@ -56,6 +57,10 @@ h1{
     width: 100%;
     padding: calc(150 * var(--shrink40)) 8vw;
     box-sizing: border-box;
+}
+
+#menu .dishes h2 {
+    text-transform: uppercase;
 }
 
 #menu .dishes .container {

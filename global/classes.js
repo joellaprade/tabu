@@ -84,10 +84,10 @@ class MobileNav {
     }
 }
 
-var test = document.querySelector('.container-1 .wrapper');
 class Carrusel {
-    constructor(element, size){
+    constructor(element, size, root){
         this.carrusel = element;
+        this.root = root
         this.size = size - 1;
         this.image = this.carrusel.querySelector('img');
         this.wrapper = document.querySelector('div.wrapper.img-carrusel')
@@ -102,7 +102,7 @@ class Carrusel {
         if(this.index < 0) {
             this.index = this.size;
         }
-        this.image.src = `/assets/index/carrusel/${this.index}.png`;
+        this.image.src = `${this.root}/${this.index}.png`;
     }
 
     moveRight(){
@@ -120,81 +120,4 @@ class Carrusel {
     }
 }
 
-var index = 0
 
-class Slider {
-    constructor(element){
-        this.element = element
-        this.size = 9
-        this.rendered = 0;
-        this.firstImg;
-        this.lastImg;
-
-        this.startObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting)this.insertStart()
-            })}, {threshold: 1})
-
-        this.endObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting)this.insertEnd()
-            })}, {threshold: 1})
-
-        this.populate()
-    }
-
-    populate(){
-        for(var i = 0; i < this.size; i++){
-            this.element.innerHTML += `<img src="/assets/index/slider/slider-img-${i}.png" alt="">`
-        }
-        this.rendered += this.size;
-        this.firstImg = this.element.childNodes[0];
-        this.lastImg = this.element.childNodes[this.size - 1]
-    }
-
-    center(){
-        var visibleWidth = Number(window.getComputedStyle(this.element).width.slice(0, 4))
-            if(isNaN(visibleWidth)) visibleWidth = Number(window.getComputedStyle(this.element).width.slice(0, 3))
-        var totalWidth = this.element.scrollWidth
-        var shift = (totalWidth - visibleWidth) / 2 
-        this.element.scrollLeft += shift
-    }
-
-    insertStart() {
-        var margin = Number(window.getComputedStyle(this.lastImg).marginLeft.slice(0,2))
-        var width = Number(window.getComputedStyle(this.lastImg).width.slice(0,3))
-        var shift = (margin * 2 + width) * 9;
-
-        for(var i = this.size - 1; i >= 0; i--){
-            var newElement = document.createElement('img');
-            var refElement = this.element.childNodes[0]
-            newElement.src = `/assets/index/slider/slider-img-${i}.png`;
-            this.element.insertBefore(newElement, refElement)
-        }
-
-        this.rendered += this.size;
-        this.element.scrollLeft += shift
-        this.startObserver.unobserve(this.firstImg)
-        this.firstImg = this.element.childNodes[0]
-        this.startObserver.observe(this.firstImg)
-    }
-
-    insertEnd() {
-        for(var i = 0; i < this.size - 1; i++){
-            var newElement = document.createElement('img');
-            newElement.src = `/assets/index/slider/slider-img-${i}.png`;
-            this.element.appendChild(newElement)
-        }
-
-        this.rendered += this.size - 1;
-        this.endObserver.unobserve(this.lastImg)
-        this.lastImg = this.element.childNodes[this.rendered - 1]
-        this.endObserver.observe(this.lastImg)
-    }
-
-    start(){
-        this.center()
-        this.startObserver.observe(this.firstImg)
-        this.endObserver.observe(this.lastImg)
-    }
-}
