@@ -336,6 +336,7 @@ h1{
     display: flex;
     justify-content: center;
     height: 33vw;
+    width: auto;
     margin: 0px auto;
 }
 
@@ -422,13 +423,14 @@ h1{
 
 #carusel .container .slider {
     display: flex;
-    justify-content: center;
     position: relative;
     
     width: 100%;
     height: 45vh;
 
     overflow-x: scroll;
+    overflow-y: clip;
+    box-sizing: border-box;
 
     border: 1px solid rgba(0, 0, 0, 0);
 }
@@ -437,14 +439,14 @@ h1{
     display: none;
   }
   
-  /* Hide scrollbar for IE, Edge and Firefox */
   #carusel .container .slider {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
 #carusel .container .slider img {
     height: 100%;
+    max-width: 100%;
     margin: 0px calc(50 * var(--shrink40));
 
     z-index: -1;

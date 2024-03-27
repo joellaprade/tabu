@@ -53,8 +53,8 @@ nav {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 3%;
-    left: 50%;
+    top: 3vh;
+    left: 50vw;
     translate: -50% 0;
 
     width: 67vw;
@@ -113,8 +113,7 @@ nav a {
 
 .mobile-nav {
     position: absolute;
-
-    right: calc(-8.1vw - 66vw);
+    right: -83.1vw;
     top: -3vh;
 
     display: flex;
@@ -122,23 +121,19 @@ nav a {
 
     height: 100vh;
     width: 66vw;
-
     box-sizing: border-box;
 
     border-left: 5px solid var(--primary);
     background-color: var(--secondary);
+
+    transition: translate ease-in-out 0.4s;
 }
 
 .mobile-nav .x {
     position: absolute;
-    right: calc(50 * var(--shrink40));
-    top: calc(50 * var(--shrink40));
+    right: calc(75 * var(--shrink40));
+    top: calc(75 * var(--shrink40));
 }
-
-/* body {
-    height: 100vh;
-    overflow-y: clip;
-} */
 
 .mobile-nav .mobile-links-container {
     display: flex;
@@ -342,6 +337,7 @@ option {
 .hamburguer{
     fill: var(--primary);
     width: 5vh;
+    height: 5vh;
 }
 
 .arrow {
@@ -474,6 +470,9 @@ option {
     }
     nav .logo-container {
         width: 20%;
+    }
+    .mobile-nav {
+        right: -74.1vw;
     }
 }
 

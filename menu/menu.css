@@ -4,10 +4,11 @@ body {
 }
 
 #menu {
+    overflow-x: clip;
     width: 100%;
     position: relative;
 
-    border-top: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
 }
 
 h1{
@@ -26,8 +27,8 @@ h1{
     align-items: end;
     
     width: 84%;
-    margin: calc(300 * var(--shrink40)) 8vw 0vw 8vw;
-    padding: calc(50 * var(--shrink40)) 8vw;
+    margin: 0vw 8vw;
+    padding: calc(300 * var(--shrink40)) 8vw calc(50 * var(--shrink40)) 8vw;
     box-sizing: border-box;
     border-bottom: 5px solid var(--secondary);
 }
@@ -127,7 +128,7 @@ h1{
 
 @media screen and (max-width: 1000px){
     #menu .menu-nav {
-        padding: calc(50 * var(--shrink40)) 0vw;
+        padding: calc(300 * var(--shrink40)) 0vw calc(50 * var(--shrink40)) 0vw;
     }
     #menu .menu-nav h1 {
         font-size: calc(110 * var(--shrink40));
