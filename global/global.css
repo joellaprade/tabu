@@ -71,6 +71,7 @@ nav a {
     font-family: 'Baloo2-Regular', sans-serif;
     color: var(--primary);
     font-size: calc(25 * var(--shrink40));
+    font-weight: 600;
 }
 
 .logo-container{
@@ -244,6 +245,7 @@ h2 {
 .select-wrapper{
     position: relative;
     z-index: 100;
+    cursor: pointer;
 }
 
 .select-element {
@@ -285,24 +287,6 @@ h2 {
 .select-element span {
     color: var(--primary);
     margin-right: 20px;
-}
-
-
-select {
-    padding: 10px 15px ;
-
-    background-color: var(--secondary);
-    color: var(--primary);
-    border: none;
-    border-radius: 5px;
-
-    font-weight: 600;
-}
-
-option {
-    color: var(--primary);
-
-    font-weight: 600;
 }
 
 /* CUSTOM COMPONENTS */

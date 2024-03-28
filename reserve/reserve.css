@@ -195,6 +195,10 @@ body {
     width: 50%;
 }
 
+#bar .container div span {
+    transition: opacity 0.5s ease;
+}
+
 #bar .container div span:nth-child(2){
     font-weight: 600;
     margin-bottom: calc(20 * var(--shrink40));

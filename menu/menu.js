@@ -23,10 +23,22 @@ var data = [
         {title: 'appetizer 3', price: 12, icons: ['veggie'],
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'},
     ],
-    [],
-    [],
-    [],
-    []
+    [
+        {title: 'mixology 1', price: 20, icons: [],
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'},
+    ],
+    [
+        {title: 'main dish 1', price: 20, icons: [],
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'},
+    ],
+    [
+        {title: 'dessert 1', price: 20, icons: [],
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'},
+    ],
+    [
+        {title: 'drink 1', price: 20, icons: [],
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'},
+    ]
 ]
 class Menu {
     constructor(){
