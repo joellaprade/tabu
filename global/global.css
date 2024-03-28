@@ -59,7 +59,7 @@ nav {
 
     width: 67vw;
     height: 10vh;
-    z-index: 2;
+    z-index: 101;
 
     background-color: var(--secondary);
     border-radius: 1000px;
