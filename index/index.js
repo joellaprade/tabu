@@ -99,7 +99,7 @@ var slider = new Slider(document.querySelector('.slider'));
 slider.lastImg.addEventListener('load', () => {
     setTimeout(() => {
         slider.start();
-    },10)  
+    },100)  
 })
 
 
